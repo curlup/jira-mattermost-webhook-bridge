@@ -11,3 +11,13 @@ service:
 
 env:
   MATTERMOST_WEBHOOK_URL: ""
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: jira-mattermost.example.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
