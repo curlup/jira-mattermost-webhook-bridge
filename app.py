@@ -78,7 +78,7 @@ def format_jira_message(data):
             from_value = change.get("fromString", "None")
             to_value = change.get("toString", "None")
 
-            changes.append(f"{field}: {from_value} ➡️ {to_value}")
+            changes.append(f"{field}: {from_value} ➡ {to_value}")
 
         changes_str = "\n".join(changes)
         message_payload["text"] = (
