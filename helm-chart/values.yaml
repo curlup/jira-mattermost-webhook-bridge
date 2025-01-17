@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: curlup/jira-mattermost-webhook-bridge
+  pullPolicy: IfNotPresent
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 5000
+
+env:
+  MATTERMOST_WEBHOOK_URL: ""

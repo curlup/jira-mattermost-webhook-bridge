@@ -1,2 +1,2 @@
 # jira-mattermost-webhook-bridge
-it is
+it is what is says

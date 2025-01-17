@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jira-mattermost-webhook-bridge
+spec:
+  selector:
+    app: jira-mattermost-webhook-bridge
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: 5000
+  type: {{ .Values.service.type }}
