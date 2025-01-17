@@ -38,8 +38,7 @@ def parse_comment_data(comment, is_update=False):
 
     prefix = "Comment updated" if is_update else "New comment"
     return {
-        "text": f"{prefix}:
-> {comment_body}",
+        "text": f"{prefix}: > {comment_body}",
         "username": f"{comment_author_display_name} (from jira-bot)",
         "icon_url": comment_avatar_url,
     }
